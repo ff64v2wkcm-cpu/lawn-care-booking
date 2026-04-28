@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teen Lawn Care Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial; margin: 0; background: #eef5ee; }
+    header { background: #2e7d32; color: white; padding: 20px; text-align: center; }
+    .container { padding: 20px; max-width: 600px; margin: auto; }
+    form { background: white; padding: 20px; border-radius: 10px; }
+    input, select, textarea {
+      width: 100%; padding: 10px; margin: 10px 0;
+      border-radius: 5px; border: 1px solid #ccc;
+    }
+    button {
+      background: #2e7d32; color: white;
+      padding: 10px; border: none; border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Teen Lawn Care</h1>
+  <p>Hayan • Bryson • Jaxson • Landon</p>
+</header>
+
+<div class="container">
+  <h2>Book an Appointment</h2>
+
+  <form action="https://formspree.io/f/YOUR-ID" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="text" name="address" placeholder="Address" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option>Lawn Mowing</option>
+      <option>Full Service</option>
+      <option>Yard Cleanup</option>
+    </select>
+
+    <input type="date" name="date" required>
+    <textarea name="notes" placeholder="Extra notes"></textarea>
+
+    <button type="submit">Book Appointment</button>
+  </form>
+</div>
+
+</body>
+</html>
